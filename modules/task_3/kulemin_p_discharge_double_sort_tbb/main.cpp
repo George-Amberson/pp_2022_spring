@@ -3,8 +3,8 @@
 #include <vector>
 #include "./kulemin_p_discharge_double_sort_tbb.h"
 
-TEST(Parallel_Operations_OpenMP, Test_90000) {
-    int count = 90000;
+TEST(Parallel_Operations_OpenMP, Test_90) {
+    int count = 90;
     vector* vb = create_random_vector(count);
     vector* sd = new vector(count);
     vector* tr = new vector(count);
@@ -15,8 +15,8 @@ TEST(Parallel_Operations_OpenMP, Test_90000) {
     ASSERT_EQ(true, res);
 }
 
-TEST(Parallel_Operations_OpenMP, Test_100000) {
-    int count = 100000;
+TEST(Parallel_Operations_OpenMP, Test_100) {
+    int count = 100;
     vector* vb = create_random_vector(count);
     vector* sd = new vector(count);
     vector* tr = new vector(count);
@@ -27,8 +27,8 @@ TEST(Parallel_Operations_OpenMP, Test_100000) {
     ASSERT_EQ(true, res);
 }
 
-TEST(Parallel_Operations_OpenMP, Test_150000) {
-    int count = 12000;
+TEST(Parallel_Operations_OpenMP, Test_120) {
+    int count = 120;
     vector* vb = create_random_vector(count);
     vector* sd = new vector(count);
     vector* tr = new vector(count);
@@ -38,8 +38,8 @@ TEST(Parallel_Operations_OpenMP, Test_150000) {
     bool res = check_vectors(vb->ptr, sd->ptr, count);
     ASSERT_EQ(true, res);
 }
-TEST(Parallel_Operations_OpenMP, Test_200000) {
-    int count = 14000;
+TEST(Parallel_Operations_OpenMP, Test_140) {
+    int count = 140;
     vector* vb = create_random_vector(count);
     vector* sd = new vector(count);
     vector* tr = new vector(count);
@@ -49,8 +49,8 @@ TEST(Parallel_Operations_OpenMP, Test_200000) {
     bool res = check_vectors(vb->ptr, sd->ptr, count);
     ASSERT_EQ(true, res);
 }
-TEST(Parallel_Operations_OpenMP, Test_400000) {
-    int count = 16000;
+TEST(Parallel_Operations_OpenMP, Test_160) {
+    int count = 160;
     vector* vb = create_random_vector(count);
     vector* sd = new vector(count);
     vector* tr = new vector(count);
